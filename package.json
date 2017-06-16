@@ -1,0 +1,10 @@
+{
+  "name": "@beisen/talent-ui-dll-naming-convention",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Liguoming",
+    "email": "liguoming@beisen.com"
+  },
+  "license": "MIT"
+}
