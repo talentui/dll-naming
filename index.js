@@ -1,4 +1,4 @@
-const afterFix = ".dev";
+const afterFix = ".chunk";
 module.exports = (packageName, version, isProduction = false) => {
     const outputFileName = packageName.indexOf("@") === -1
         ? packageName
