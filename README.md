@@ -1,23 +1,23 @@
-# 使用[talent-ui-dll-webpack-config]()创建dll时的命名规则， 这个规则同样使用于在[talent-ui-webpack-config]()引入dll时根据dllList传入dll名字，自动解析出文件路径。
+# 使用[@talentui/dll-webpack-config]()创建dll时的命名规则， 这个规则同样使用于在[@talentui/webpack-config]()引入dll时根据dllList传入dll名字，自动解析出文件路径。
 
 ## 应用
 
 ```js
-    const namingConvention  = require('@beisen/talent-ui-dll-naming-convention');
-    const dllInfo = namingConvention('@beisen/talent-ui-dll', '1.0.3', true);
+    const namingConvention  = require('@talentui/dll-naming');
+    const dllInfo = namingConvention('@talentui/dll-react', '1.0.3', true);
     console.log(dllInfor)
     /*
         {
-            manifest: talent-ui-dll-1.0.3.manifest.json
-            filename: talent-ui-dll-1.0.3.min.js
+            manifest: dll-react-1.0.3.manifest.json
+            filename: dll-react-1.0.3.min.js
         }
     */
-    const devDllInfo = namingConvention('@beisen/talent-ui-dll', '1.0.3', false)
+    const devDllInfo = namingConvention('@talentui/dl-react', '1.0.3', false)
     console.log(devDllInfo)
     /*
         {
-            manifest: talent-ui-dll.dev.manifest.json
-            filename: talent-ui-dll.dev.js
+            manifest: dll-react.dev.manifest.json
+            filename: dll-react.dev.js
         }
     */
 ```
