@@ -1,6 +1,6 @@
 {
   "name": "@talentui/dll-naming",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
   "author": {
     "name": "Liguoming",
@@ -13,5 +13,19 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "scripts": {
+    "cm": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "devDependencies": {
+    "@talentui/cz-package-changelog": "^1.0.0",
+    "commitizen": "^2.9.6",
+    "semantic-release": "^8.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@talentui/cz-package-changelog"
+    }
   }
 }
